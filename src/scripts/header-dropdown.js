@@ -3,7 +3,7 @@ const dropdown = document.querySelector(".navigation__dropdown");
 
 nav.addEventListener("mouseover" , () => dropdown.style.display = "block");
 
-dropdown.addEventListener("mouseout" , () => dropdown.style.display = "none");
+dropdown.addEventListener("mouseleave" , () => dropdown.style.display = "none");
 
 
 
