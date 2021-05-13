@@ -8,6 +8,7 @@ arrowRightFromGal1.addEventListener("click" , () => {
     let galleryImgs = document.getElementById("gallery1__items");
     const firstImg = galleryImgs.firstElementChild;
     galleryImgs.append(firstImg);
+    
 });
 
 arrowLeftFromGal1.addEventListener("click", () => {
@@ -20,8 +21,19 @@ const photosFromGallery1 = document.querySelectorAll(".gallery-1 > img");
 photosFromGallery1.forEach(function(el){
     el.addEventListener("click", (event)=> {
     const bigPhoto = document.getElementById("photo-1");
+   
     let copyImg = event.currentTarget.cloneNode(true);
-    console.log("clickedIm",copyImg);
+
+    photosFromGallery1.forEach(function(el){
+        if(el.style.border == "2px solid red"){
+        el.style.border = "none";
+        }
+    });
+
+    event.currentTarget.style.border = "2px solid red";
+    
+    
+    
     if(bigPhoto.firstElementChild){
         bigPhoto.firstElementChild.remove();
         }
@@ -54,6 +66,15 @@ photosFromGallery2.forEach(function(el){
     const bigPhoto = document.getElementById("photo-2");
     let copyImg = event.currentTarget.cloneNode(true);
     console.log("clickedIm",copyImg);
+
+    photosFromGallery2.forEach(function(el){
+        if(el.style.border == "2px solid red"){
+        el.style.border = "none";
+        }
+    });
+
+    event.currentTarget.style.border = "2px solid red";
+
     if(bigPhoto.firstElementChild){
         bigPhoto.firstElementChild.remove();
         }
@@ -86,6 +107,15 @@ photosFromGallery3.forEach(function(el){
     const bigPhoto = document.getElementById("photo-3");
     let copyImg = event.currentTarget.cloneNode(true);
     console.log("clickedIm",copyImg);
+
+    photosFromGallery3.forEach(function(el){
+        if(el.style.border == "2px solid red"){
+        el.style.border = "none";
+        }
+    });
+
+    event.currentTarget.style.border = "2px solid red";
+
     if(bigPhoto.firstElementChild){
         bigPhoto.firstElementChild.remove();
         }
