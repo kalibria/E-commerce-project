@@ -1,3 +1,5 @@
+//section photos
+
 .products {
     width: 100%;
 }
@@ -14,7 +16,7 @@
 
 .photos__big{
     width: 35%;
-    height: 300px;
+    height: $height-max;
     margin: $padding-medium *2;
     overflow: hidden;
     border:black 1px solid;
@@ -23,12 +25,12 @@
 .photos__big > img {
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: $height-max;
 }
 
 .photos__gallery {
     width: 60%;
-    height: 200px;
+    height: $height-md;
     margin: $box-container;
     margin-right: $padding-medium *2;
     align-self: center;
@@ -39,7 +41,7 @@
 
 .gallery__items {
     display: flex;
-    height: 200px;
+    height: $height-md;
     overflow: hidden;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -55,16 +57,14 @@
 .carousel-item {
     img {
         width: 100%;
-        height: 300px;
+        height: $height-max;
         object-fit: cover;
     }
 }
 
 .gallery__item {
     width:33%;
-    border:black solid 1px;
-    background-color: blue;
-    
+    border:black solid 1px;   
 }
 
 .gallery__item {
@@ -105,3 +105,62 @@
     top:50%;
     bottom: 50%;
 }
+
+//section description
+
+.description__conteiner {
+    width: 100%;
+    height: $height-max;
+    margin-top: $padding-medium * 2;
+}
+
+.description__text {
+    h5{
+        text-align: center;
+        font-family: $font-main;
+        font-size: $font-size-heading;
+        margin:0;
+        margin-bottom: $padding-small;
+    }
+    p{
+        font-family: $font-main;
+        font-size: $font-size-main;
+        margin: 0;
+        margin-bottom: $padding-small;
+    }
+
+}
+
+.color__heading{
+    text-align: center;
+    font-family: $font-main;
+    font-size: $font-size-heading;
+    margin-bottom: $padding-small;
+}
+
+.color__choice {
+    font-family: $font-main;
+    font-size: $font-size-main;
+    margin: 0;
+}
+
+.description__color {
+    margin-bottom: $padding-small;
+}
+
+.description__price{
+    h5 {
+        font-family: $font-main;
+        font-size: $font-size-heading;
+        margin:0;
+        margin-right: $padding-small;
+    }
+}
+
+.description__price {
+    display: flex;
+}
+
+
+
+
