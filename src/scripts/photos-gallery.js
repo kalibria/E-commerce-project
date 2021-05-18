@@ -106,7 +106,7 @@ photosFromGallery3.forEach(function(el){
     el.addEventListener("click", (event)=> {
     const bigPhoto = document.getElementById("photo-3");
     let copyImg = event.currentTarget.cloneNode(true);
-    console.log("clickedIm",copyImg);
+    
 
     photosFromGallery3.forEach(function(el){
         if(el.style.border == "2px solid red"){
