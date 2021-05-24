@@ -85,7 +85,8 @@
     font-size: 26px;
 }
 
-.fas:hover {
+.arrow-left-1:hover,
+.arrow-right-1:hover {
     font-size: 30px;
     color: $color-lite-grey;
 }
@@ -149,6 +150,35 @@
 
 .description__color {
     margin-bottom: $padding-small;
+}
+
+.quantity__text {
+    text-align: center;
+    font-family: "Arial, Helvetica, sans-serif;";
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.quantity__increase,
+.quantity__decrease{
+    font-size: 14px;
+    margin: $padding-small;
+}
+
+.description__quantity{
+    margin-bottom: $padding-medium;
+}
+
+.quantity__conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity__items{
+    input{
+        width: 40px;
+        height: 20px;
+    }
 }
 
 .description__price{
@@ -244,6 +274,14 @@
     }
 }
 
+.infa-modal__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: $padding-small;
+    color: #212529;
+    font-size: 16px;
+}
 
 
 

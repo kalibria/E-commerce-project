@@ -81,6 +81,16 @@
                   <p class="color__choice"><input type="radio" name="color" value="Marengo">Marengo</p>
                   <p class="color__choice"><input type="radio" name="color" value="Fuchsia">Fuchsia</p>
                  </form>
+                 <div class="description__quantity">
+                   <p class="quantity__text">Quantity: </p>
+                   <div class="quantity__conteiner">
+                    <i class="fas fa-plus-circle quantity__increase"></i>
+                    <form class="quantity__items">
+                      <input type="number" value="1" id="quantity" name="quantity" min="0" max="100">
+                    </form>
+                    <i class="fas fa-minus-circle quantity__decrease"></i>
+                  </div>
+                 </div>
                  <div class="description__price">
                    <h5><strong>PRICE:</strong></h5>
                    <p class="price__item" id="price-block-1"> 99999 $</p>
@@ -97,7 +107,9 @@
                  <i class="fas fa-info-circle description__info"></i>
                  <div class="description__infa-modal">
                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nesciunt minus repudiandae eligendi impedit quas non aperiam voluptate voluptatem soluta.</p>
+                   <i class="fas fa-times infa-modal__exit"></i>
                  </div>
+                 
 
               </div>
             </div>
@@ -168,6 +180,7 @@
     <script src="scripts/photos-gallery.js"></script>
     <script src="scripts/price.js"></script>
     <script src="scripts/info-modal.js"></script>
+    <script src="scripts/quantity.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
     
