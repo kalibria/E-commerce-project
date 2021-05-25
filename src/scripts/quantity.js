@@ -2,13 +2,8 @@ const btnPlus = document.querySelector(".quantity__increase");
 const btnMinus = document.querySelector(".quantity__decrease");
 const input = document.getElementById("quantity");
 let inputValue = Number(document.getElementById("quantity").value);
-//let inputValue = Number(input.getAttribute("value"));
 
 const one = 1;
-
-console.log("pl", btnPlus);
-console.log("mn", btnMinus);
-console.log("inputValue", inputValue);
 
 function increaseValue () { 
     if(input.value > 100){
