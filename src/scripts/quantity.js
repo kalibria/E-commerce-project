@@ -10,12 +10,20 @@ console.log("pl", btnPlus);
 console.log("mn", btnMinus);
 console.log("inputValue", inputValue);
 
-function increaseValue () {   
-    input.value = inputValue += one;
+function increaseValue () { 
+    if(input.value > 100){
+        return;
+    }else {
+        input.value = inputValue += one;
+    }  
 }
 
 function decreaseValue () {
-    input.value = inputValue -= one;
+    if(input.value < 1){
+        return;
+    }else{
+        input.value = inputValue -= one;
+    }
 }
 
 btnPlus.addEventListener("click", increaseValue);
