@@ -251,9 +251,9 @@
     color: #041e4e;
 }
 
-//description__infa-modal
+//description__info-modal
 
-.description__infa-modal{
+.description__info-modal{
     display: none;
     width: 90%;
     height: auto;
@@ -266,7 +266,7 @@
     padding: $padding-small;
 }
 
-.description__infa-modal{
+.description__info-modal{
     p{
        font-family: "Arial, Helvetica, sans-serif;";
        font-size: 14px;
@@ -274,7 +274,7 @@
     }
 }
 
-.infa-modal__exit {
+.info-modal__exit {
     position: absolute;
     top: 0;
     right: 0;

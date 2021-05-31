@@ -1,18 +1,26 @@
+import {AquamarinePrice} from './variables';
+import {othersPrice} from './variables';
+import { boxForm } from './variables';
+
 const form = document.querySelector(".description__color");
 
-function priceFixing () {
+
+
+export function priceFixing () {
     const boxPrice = document.getElementById("price-block-1");
-    const boxForm = document.getElementsByName("color");
+    console.log("boxPrice", parseInt(boxPrice.textContent));
 
     boxForm.forEach(function(item){
         if(item.checked){
-            if(item.value !== "Aquamarine"){
-                boxPrice.innerHTML = "88888 $"
+            if(item.value == "Aquamarine"){
+                boxPrice.innerHTML = AquamarinePrice + " $";
             }else{
-                boxPrice.innerHTML = "99999 $"
-            }
+                boxPrice.innerHTML = othersPrice + " $";
+            };
         }
     })
+
+    
 }
 
 form.addEventListener("click", priceFixing);

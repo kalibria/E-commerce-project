@@ -18,6 +18,7 @@ arrowLeftFromGal1.addEventListener("click", () => {
 });
 
 const photosFromGallery1 = document.querySelectorAll(".gallery-1 > img");
+
 photosFromGallery1.forEach(function(el){
     el.addEventListener("click", (event)=> {
     const bigPhoto = document.getElementById("photo-1");
