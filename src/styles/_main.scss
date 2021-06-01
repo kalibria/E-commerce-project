@@ -80,10 +80,15 @@
         opacity:0.5;
     }
 }
-.fas {
+
+
+.arrow-left-1,
+.arrow-right-1{
     color: white;
     font-size: 26px;
 }
+
+
 
 .arrow-left-1:hover,
 .arrow-right-1:hover {
@@ -196,6 +201,17 @@
 .description__price {
     display: flex;
     margin-bottom: $padding-small;
+}
+
+//descripton__button
+
+.description__button{
+    text-align: center;
+    margin-bottom: $padding-small;
+}
+
+.description__button:hover{
+    opacity:0.75;
 }
 
 //description__rating

@@ -8,7 +8,7 @@
 .container {
     margin: $box-container;
     display: flex;
-    align-items: baseline; 
+    align-items: center; 
     justify-content: space-between;
     padding: $padding-big;
     
@@ -17,13 +17,25 @@
 .main-menu__logo {
     width: 70px;
     height: 70px;
-    background-color: #284b63;
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    font-size: 62px;
+}
+
+.main-menu__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation__elements {
     display: flex;
     list-style: none;
     padding-left: 0;
+    text-align: center;
 }
 
 .elements__item {
@@ -50,6 +62,7 @@
     margin-left: $padding-medium;
     line-height: 2em;
     position: absolute;
+    text-align: left;
 }
 
 .dropdown__item:hover {
@@ -59,7 +72,14 @@
 .main-menu__cart {
     width: 40px;
     height: 40px;
-    background-color: $color-dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__icon{
+    color: $color-dark-grey;
+    font-size: 26px;
 }
 
 
