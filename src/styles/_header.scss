@@ -70,16 +70,32 @@
 }
 
 .main-menu__cart {
-    width: 40px;
+    width: auto;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.cart__icon{
+.cart__icon {
     color: $color-dark-grey;
     font-size: 26px;
+}
+
+.main-menu__cart::after {
+    content: "0";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:white;
+    position: absolute;
+    right: -7px;
+    top: 0;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

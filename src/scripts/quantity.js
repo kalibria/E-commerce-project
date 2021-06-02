@@ -2,7 +2,6 @@ import {AquamarinePrice} from './variables';
 import {othersPrice} from './variables';
 import { boxForm as radioButtons } from './variables';
 
-console.log("colors", radioButtons);
 
 const btnPlus = document.querySelector(".quantity__increase");
 const btnMinus = document.querySelector(".quantity__decrease");
