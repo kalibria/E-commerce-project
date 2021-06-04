@@ -83,8 +83,7 @@
     font-size: 26px;
 }
 
-.main-menu__cart::after {
-    content: "0";
+.cart__quantity {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -96,6 +95,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.quantity__number {
+    margin: 0;
 }
 
 

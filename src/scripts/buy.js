@@ -1,20 +1,20 @@
 import {getCurrentInputValue} from './quantity';
 
-const buttonBuy = document.getElementById("button__buy");
-console.log("btnBuy",buttonBuy);
+const buttonAddToCart = document.getElementById("button__buy");
+console.log("btnBuy",buttonAddToCart);
 
-export function getItemToCart () {
-    let cart = window.getComputedStyle(document.querySelector(".main-menu__cart"), ":after").content;
-    console.log("cartValue", cart);
+export function getItemToCart (event) {
+    event.preventDefault();
+    let cart = document.querySelector(".quantity__number");
+    let cartQty = Number(cart.textContent);
+    
     const quantityItem = getCurrentInputValue();
-    console.log("qty", quantityItem);
-    cart += quantityItem;
-    cart.innerHtml = "cart";
-    console.log("cart2", cart);
+
+    cartQty += quantityItem;
+    cart.innerHTML = cartQty; 
+    return cartQty;  
     
 }
 
-getItemToCart();
 
-
-buttonBuy.addEventListener("click", getItemToCart);
+buttonAddToCart.addEventListener("click", getItemToCart);
