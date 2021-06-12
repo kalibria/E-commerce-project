@@ -1,11 +1,9 @@
 import {getCurrentInputValue} from './quantity';
-
-const buttonAddToCart = document.getElementById("button__buy");
-console.log("btnBuy",buttonAddToCart);
+import {cart} from './variables';
+import {buttonAddToCart} from './variables';
 
 export function getItemToCart (event) {
     event.preventDefault();
-    let cart = document.querySelector(".quantity__number");
     let cartQty = Number(cart.textContent);
     
     const quantityItem = getCurrentInputValue();

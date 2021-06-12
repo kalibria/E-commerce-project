@@ -16,8 +16,8 @@ export function priceFixing () {
                 boxPrice.innerHTML = AquamarinePrice + " $";
             }else{
                 boxPrice.innerHTML = othersPrice + " $";
-            };
-        }
+            } 
+        } ;
     })
 
     

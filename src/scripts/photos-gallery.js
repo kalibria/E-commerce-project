@@ -44,7 +44,7 @@ photosFromGallery1.forEach(function(el){
 
 //carousel for block 2
 
-const arrowRightFromGal2 = document.querySelector(".arrow-right-2");
+/*const arrowRightFromGal2 = document.querySelector(".arrow-right-2");
 const arrowLeftFromGal2 = document.querySelector(".arrow-left-2");
 
 
@@ -122,7 +122,7 @@ photosFromGallery3.forEach(function(el){
         }
     bigPhoto.append(copyImg);  
     })
-})
+})*/
 
 
 

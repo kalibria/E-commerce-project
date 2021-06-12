@@ -19,7 +19,7 @@
 .photos__big{
     width: 35%;
     height: $height-max;
-    margin: $padding-medium *2;
+    margin: 6em 2em;
     overflow: hidden;
     border:black 1px solid;
 }
@@ -120,6 +120,7 @@
     width: 100%;
     height: auto;
     margin-top: $padding-medium * 2;
+    margin-bottom: $padding-medium * 2;
     position: relative;
 }
 
