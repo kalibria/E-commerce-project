@@ -9,6 +9,12 @@ export function openPopup () {
     popup.style.display = "block";
 }
 
+export function closePopup (event) {
+    if(event.currentTarget !== popup){
+    popup.style.display = "none";
+    }
+}
+
 export function createDive () {
     const divPopup = document.createElement("div");
     divPopup.className = "popup__div";
@@ -46,12 +52,6 @@ export function createDive () {
         divPopupPhoto.append(element['photo']);
         element['photo'].classList.add('popupPhotoImg');
 
-        
-        
-
-
-        //element['photo'].className = "popupPhotoImg";
-
         divPopupName.append(element['name']);
         divPopupColor.append(element['color']);
         divPopupQty.append(element['quantity'] + " pc");
@@ -67,3 +67,4 @@ export function createDive () {
 
 cart.addEventListener("click",openPopup);
 buttonAddToCart.addEventListener("click",createDive);
+document.addEventListener("click",closePopup, true);
