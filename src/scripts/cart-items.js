@@ -1,8 +1,6 @@
 import {buttonAddToCart} from './variables';
 import {getSelectedColor} from './quantity';
 import {getCurrentInputValue} from './quantity';
-import { increaseValue} from './quantity';
-import { calculateTotal } from './utils';
 
 export const cartItems = [];
 
@@ -16,10 +14,9 @@ export function CreateNewItemInCart () {
     item["quantity"] = getCurrentInputValue ();
     const photoFromDivPhotosBig = document.querySelector(".photos__big > img");
     item["photo"] = photoFromDivPhotosBig.cloneNode(true);
-    item["total"] = calculateTotal(cartItems);
+    // item["total"] = calculateTotal(cartItems);
     cartItems.push(item);
     console.log("cartitems", cartItems)
-    
 
 }
 
