@@ -97,19 +97,30 @@
 
 .cart__popup {
     width: 200px;
-    height: auto;
+    height: 250px;
     border: 2px solid black;
     display: none;
     position: absolute;
     top: 35px;
     background-color: white;
     z-index: 99;
+    overflow: scroll;
 }
+
 
 .popup__header {
     font-family: $font-main;
     font-size: $font-size-main;
     margin: 0;
+    margin-left: $padding-small;
+}
+
+.popup__divTotal {
+    font-family: $font-main;
+    font-size: $font-size-main;
+    margin: 0;
+    margin-left: $padding-small;
+    color: red;
 }
 
 .cart__popup {
@@ -120,8 +131,7 @@
 
 .popup__div {
     width: 100%;
-    height: auto;
-    background-color: yellowgreen;
+    max-height: 350px;
     margin-top: $padding-small;
     margin-bottom: $padding-small;
     display: flex;
@@ -132,7 +142,6 @@
 .popup__div-photo {
     width: 80px;
     height: 100px;
-    background-color: gray;
     margin-left: $padding-small;
     margin-right: $padding-small;
     overflow: hidden;
@@ -147,7 +156,6 @@
 .popup__section-info {
     width: 100px;
     height: auto;
-    background-color: hotpink;
     font-family: $font-main;
     font-size: 12px;
 }
@@ -166,6 +174,13 @@
 
 .popup__div-qty {
     margin: $padding-small;
+}
+
+.popup__total {
+    font-family: $font-main;
+    font-size: $font-size-main;
+    margin: 0;
+    margin-left: $padding-small;
 }
 
 
