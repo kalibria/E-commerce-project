@@ -301,6 +301,57 @@
 }
 
 
+//products__reviews
+
+.products__reviews {
+    width:90%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: $padding-medium;
+    margin-bottom: $padding-medium;
+}
+
+.reviews__conteiner {
+    display: flex;
+}
+
+.reviews__header {
+    text-align: center;
+    font-family: "Arial, Helvetica, sans-serif;";
+    font-size: 18px;
+    padding: $padding-medium;
+    margin: 0;
+}
+
+.reviews__item {
+    width: 300px;
+    height: auto;
+    margin-right: $padding-small;
+    margin-left: $padding-small;
+    border: 2px solid $color-dark-grey;
+    border-radius: 5px;
+    font-family: "Arial, Helvetica, sans-serif;";
+    font-size: 18px;
+    padding: $padding-medium;
+}
+
+.review__name {
+    font-weight: 700;
+}
+
+.review__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid $color-lite-grey;
+}
+
+.review__text {
+    margin-top: $padding-small;
+    margin-bottom: $padding-small;
+}
+
 
 
 
