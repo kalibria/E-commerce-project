@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: $color-dark-grey;
+}
+
+.footer__conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: $padding-medium;
+}
+
+.github-icon {
+    color: white;
+    font-size: 36px;
+}
+
+.form__search {
+    font-family: $font-main;
+    font-size: $font-size-main;
+}
+
+.search-icon {
+    font-size: $font-size-main;
+}
+
+.footer__form {
+    position: relative;
+}
+
+.form__search-button {
+    position: absolute;
+    top: 3px;
+    border: none;
+    left: 160px;
+    background-color: none;
+    background-color: white;
+    height: 17px;
+    width: 20px;
+}
+
