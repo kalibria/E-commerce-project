@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: $color-dark-grey;
 }
 
@@ -41,3 +41,27 @@
     width: 20px;
 }
 
+.footer__conteiner-name {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 0 auto;
+    color:white;
+}
+
+.footer__name {
+    font-family: $font-main;
+    font-size: $font-size-main;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.footer__year {
+    font-family: $font-main;
+    font-size: $font-size-main;
+}
+
+.footer_emoji {
+    margin: 0;
+}
