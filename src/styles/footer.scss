@@ -13,7 +13,7 @@
 }
 
 .github-icon {
-    color: white;
+    color: black;
     font-size: 36px;
 }
 
@@ -64,4 +64,23 @@
 
 .footer_emoji {
     margin: 0;
+}
+
+.fotter__github {
+    background-color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fotter__github {
+    a{
+        cursor: pointer;
+    }
 }
