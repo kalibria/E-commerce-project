@@ -266,7 +266,12 @@
 .description__info {
     font-size: 30px;
     color: #041e4e;
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+
 
 //description__info-modal
 

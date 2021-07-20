@@ -77,13 +77,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .fotter__github {
     a{
-        cursor: pointer;
+    z-index: 1;
     }
 }
+
 
 .fotter__github::before {
     content: "";
@@ -142,4 +144,37 @@
         border-left-color: transparent;
         border-right-color: transparent;
     }
+}
+
+.footer__cookie {
+    display: none;
+    width: 400px;
+    height: 100px;
+    background-color: liteyellow;
+    background-color: #f5d478;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer__cookie-text {
+    font: $font-main;
+    font-size: $font-size-heading;
+    text-align: center;
+    margin: $padding-medium;
+}
+
+.cookie-buton__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.cookie-button__accept {
+    width: 100px;
 }

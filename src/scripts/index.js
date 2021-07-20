@@ -9,5 +9,8 @@ import { createPopup } from './popup';
 import { closePopup } from './popup';
 import { clearAllClasses } from './utils';
 import { createReviews } from './reviews';
-export { getYear } from './footer-name';
-import{ CreateNewItemInCart } from './cart-items';
+import { getYear } from './footer-name';
+import { CreateNewItemInCart } from './cart-items';
+import { getCookie } from './cookie';
+import { acceptCookie } from './cookie';
+import { acceptCookies, closeAdvertizing } from './cookie-bar'
